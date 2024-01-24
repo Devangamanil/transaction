@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/shopping")
+mongoose.connect("mongodb+srv://atique:V62JV2zmkB0D4KFi@cluster0.vx7cs.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
  
     console.log("connected to DB");
