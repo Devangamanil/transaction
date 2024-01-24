@@ -91,7 +91,7 @@ const getStatistics = async(req ,res)=> {
    const month = req.params.month ;  
    let  monthlyData = [] ;
    try {
-     const response = await axios.get(`http://localhost:3000/allTransaction/monthly/${month}`) ;
+     const response = await axios.get(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/monthly/${month}`) ;
 
       monthlyData = response.data;  
   
@@ -142,7 +142,7 @@ const getBarData = async(req ,res)=> {
       let monthlyData = [] ;   
      try {
 
-          const response = await axios.get(`http://localhost:3000/allTransaction/monthly/${month}`) ;
+          const response = await axios.get(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/monthly/${month}`) ;
 
           monthlyData = response.data;  
       
@@ -188,7 +188,7 @@ const getPieData = async(req ,res)=>  {
      let monthlyData = [] ; 
 
      try {
-         const response =  await axios.get(`http://localhost:3000/allTransaction/monthly/${month}`); 
+         const response =  await axios.get(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/monthly/${month}`); 
 
          monthlyData = response.data ;  
 
