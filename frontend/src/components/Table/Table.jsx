@@ -24,7 +24,7 @@ export default function Table({setMonth, currentMonth}) {
 
 
   const getAllUser = async () => {
-    const response = await fetch(`http://localhost:3000/allTransaction/monthly/${currentMonth}`);
+    const response = await fetch(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/monthly/${currentMonth}`);
 
     const  data = await response.json();
 
@@ -40,7 +40,7 @@ export default function Table({setMonth, currentMonth}) {
   const handlePrevious = async () => {
     if (page > 1) {
       const response = await fetch(
-        `http://localhost:3000/allTransaction/${page-1}`
+        `https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/${page-1}`
       );
 
       const { data } = await response.json();
@@ -61,7 +61,7 @@ export default function Table({setMonth, currentMonth}) {
   const handleNext = async () => {
     if (page < totalPage) {
       const response = await fetch(
-        `http://localhost:3000/allTransaction/${page +1}`
+        `https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/${page +1}`
       );
 
       const { data } = await response.json();

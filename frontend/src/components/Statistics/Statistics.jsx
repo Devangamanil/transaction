@@ -8,7 +8,7 @@ function Statistics({currentMonth, currentMonthStats}) {
   async function getStatsData() { 
 
       try {
-          const response =  await fetch(`http://localhost:3000/allTransaction/statistics/${currentMonth}`) ; 
+          const response =  await fetch(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/statistics/${currentMonth}`) ; 
 
           const data = await response.json() ;  
           setStats(data) ; 

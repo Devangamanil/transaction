@@ -3,12 +3,12 @@ import React, {useEffect, useState} from "react" ;
 
 const Dropdown = ({month, setData}) => { 
 
-    const [selectedOption, setSelectedOption] = useState(month[2].name);   
+    const [selectedOption, setSelectedOption] = useState(month[10].name);   
 
     const getMonthlyData = async()=>{ 
          
        try {
-          const response = await fetch(`http://localhost:3000/allTransaction/monthly/${selectedOption}`) ; 
+          const response = await fetch(`https://transaction-dashboard-mern-stack-project-backend.vercel.app/allTransaction/monthly/${selectedOption}`) ; 
 
           const data = await response.json() ; 
 
