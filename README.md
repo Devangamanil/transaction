@@ -5,5 +5,5 @@ steps to run a project :
 3. After completing backend setup go inside frontend/
 4. Run "npm i" and then do "npm run dev" to run the project localhost:5173
 
-   Thanks
-   Md.Atique Alam
+
+Live Link : https://transaction-dashboard-mern-stack-project.vercel.app/
